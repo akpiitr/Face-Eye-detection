@@ -90,24 +90,19 @@ x,y=p.read(0)
 x
 cap = cv2.VideoCapture(0) 
 
-while True: 
-    
+while True:    
     ret, frame = cap.read(0) 
-     
     frame = detect_face(frame)
- 
     cv2.imshow('Video Face Detection', frame) 
  
     c = cv2.waitKey(1) 
     if c == 27: 
-        break 
-        
+        break         
 cap.release() 
 cv2.destroyAllWindows()
 
 #Eye_Detection
 cap = cv2.VideoCapture(0) 
-
 while True: 
     
     ret, c = cap.read(0) 
@@ -122,21 +117,3 @@ while True:
         
 cap.release() 
 cv2.destroyAllWindows()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
